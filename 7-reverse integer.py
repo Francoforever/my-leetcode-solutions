@@ -10,8 +10,6 @@ class Solution(object):
         elif x != 0:
             if x < 0:
                 length -= 1
-            else:
-                pass
             resnum = 0
             xabs = abs(x)
             for i in range(length-1):
@@ -19,17 +17,11 @@ class Solution(object):
             resnum = resnum + xabs / (10 ** (length - 1))
             if x < 0:
                 resnum *= (-1)
-            else:
-                pass
         elif x == 0:
             resnum = 0
-        else:
-            pass
         if eor == 1:
             return -1
         else:
             if abs(resnum) > (2**31-1):
                 resnum = 0
-            else:
-                pass
             return resnum
